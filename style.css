@@ -33,13 +33,14 @@ a:hover {
 
 /*建立頁面背景圖片*/
 body {
-    width:100%;
-    height: 100vh;
-    overflow:hidden;
+    width:auto;
+    height: auto;
+    /* overflow:hidden; */
     background-image: url(image/背景2.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: top;
+    background-attachment: fixed;
 }
 
 .content{
@@ -98,7 +99,7 @@ body {
 }
 
 .meteor-shower {
-    width:100%;
+    width:99%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -150,24 +151,110 @@ body {
 
 
 /*建立自我介紹頁面*/
+.name{
+    text-align: center;
+}
 
-/* .self-intro {
+.job{
+    text-align: center;
+}
+
+.self-intro {
     display: flex;
+    padding: 0px 180px 0px 200px;
     color:whitesmoke;
     text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-.intro-picture {
-    flex:3;
+.self-picture {
+    flex:1;
+    position:relative; top:90px; right:30px;
 }
 
-.article {
-    flex:2;
-}
-
-.article .detail {
+.self-article {
+    flex:1;
     font-size:20px;
     line-height:1.6;
-    font-family: Didot, serif;
-} */
+    font-family: Didot, serif; 
+    opacity:0.8;
+}
 
+.college-intro {
+    display: flex;
+    padding: 0px 200px 0px 180px;
+    color:whitesmoke;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.college-picture {
+    flex:1;
+    position:relative; top:50px; left:50px;
+}
+
+.college-article {
+    flex:1;
+    font-size:20px;
+    line-height:1.6;
+    font-family: Didot, serif; 
+    opacity:0.8;
+}
+
+.hobby-intro {
+    display: flex;
+    padding: 0px 150px 0px 200px;
+    color:whitesmoke;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.hobby-picture {
+    flex:1;
+    position:relative; top:100px; right:30px;
+}
+
+.hobby-article {
+    flex:1;
+    font-size:20px;
+    line-height:1.6;
+    font-family: Didot, serif; 
+    opacity:0.8;
+}
+
+.game-intro {
+    display: flex;
+    padding: 0px 160px 0px 180px;
+    color:whitesmoke;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.game-picture {
+    flex:1;
+    position:relative; top:120px; left:40px;
+}
+
+.game-article {
+    flex:1;
+    font-size:20px;
+    line-height:1.6;
+    font-family: Didot, serif; 
+    opacity:0.8;
+}
+
+.food-intro {
+    display: flex;
+    padding: 0px 200px 0px 240px;
+    color:whitesmoke;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.food-picture {
+    flex:1;
+    position:relative; top:80px; right:30px;
+}
+
+.food-article {
+    flex:1;
+    font-size:20px;
+    line-height:1.6;
+    font-family: Didot, serif; 
+    opacity:0.8;
+}
