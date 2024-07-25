@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Blog</title>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
 </head>
 <body>
     <div class="head-part">
@@ -19,57 +22,110 @@
         <div class="index-part" style="font-size: 25px;">
             <div class="part-1"><a href="index.html">Home</a></div>
             <div class="part-2"><a href="about.html">About</a></div>
-            <div class="part-3"><a href="blog.html">Blog</a></div>
+            <div class="part-3"><a href="blog.html">Project</a></div>
         </div>
     </div>
     
+
+    <div class="self-intro" data-aos="fade-up">
+        <div class="self-title">
+            <h2>About</h2>
+        </div>
+
+        <div class="self-detail">
+            <div class="self-picture">
+                <img src="image/自介圖2.jpg" width="650px">
+            </div>
+            
+            <div class="self-article">
+                <ul>
+                    <li>Name : Kevin</li>
+                    <li>Education : College</li>
+                    <li>Job : Student</li>
+                    <li>Hobby : Watching stream, Gaming</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <div class="college-intro" data-aos="fade-up">
+        <div class="college-title">
+            <h2>Education</h2>
+        </div>
+
+        <div class="college-detail">
+            <div class="college-article">
+                <ul>
+                    <li>College 2023.9~NOW
+                        <ul style="font-size: 25px;">
+                            <li>National Taiwan Ocean University</li>
+                            <li>Computer Science & Information Engineering</li>
+                        </ul>
+                    </li>
+                    
+                    <li>Senior high 2020.9~2023.6
+                        <ul style="font-size: 25px;">
+                            <li>Taoyuan City Private Xinxing Senior High School</li>
+                        </ul>
+                    </li>
+
+                    <li>Junior high 2017.9~2020.6
+                        <ul style="font-size: 25px;">
+                            <li>Taoyuan Municipal Tongde Junior High School</li>
+                        </ul>
+                    </li>
+
+                    <li>Elementary 2011.9~2017.6
+                        <ul style="font-size: 25px;">
+                            <li>Tongde Elementary School, Taoyuan City</li>
+                        </ul>
+                    </li>
+
+                    <!-- <li>College : National Taiwan Ocean University</li>
+                    <li>Location : Keelong</li>
+                    <li>Major : Computer Science & Engineering</li>
+                    <li>Grade : Sophomore</li> -->
+                </ul>
+            </div>
+
+            <div class="college-picture">
+                <img src="image/college2.avif" width="400px">
+            </div>
+        </div>
+    </div>
     
-    <div class="name">
-        <h1 style="font-size:60px;">Hi! I'm Kevin </h1>
-    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
 
-    <div class="job">
-        <h1 style="font-size:30px; opacity:0.65; ">A freshman major in computer science & blogger </h1>
-    </div>
+    <div class="job-intro" data-aos="fade-up">
+        <div class="job-title">
+            <h2>Job</h2>
+        </div>
 
-    <div class="self-intro">
-        <div class="self-picture">
-            <img src="image/自介圖2.jpg" width="700px">
+        <div class="job-detail">
+            <div class="job-picture">
+                <img src="image/job.jpg" width="650px">
+            </div>
+            
+            <div class="job-article">
+                <ul>
+                    <li>Elementary : Class President</li>
+                    <li>Junior high : PE Officer</li>
+                    <li>Senior high : Class Secretary</li>
+                    <li>College : Committee member of the Tennis Club</li>
+                </ul>
+            </div>
         </div>
-        
-        <div class="self-article">
-            <p> 
-                Ever since I was young, I have been fascinated by the world of technology 
-                and how it shapes our daily lives. 
-                This curiosity led me to pursue a degree in computer science,
-                in National Taiwan Ocean University, 
-                where I am excited to learn and grow in this dynamic field.
-            </p>
-            
-            <p>
-                Although I am just starting my academic journey, 
-                I have already gained foundational knowledge in programming languages such as C++. 
-                I am particularly interested in exploring data structures, algorithms, 
-                and web development as I progress through my studies. 
-                One of my current projects involves creating a simple website to help 
-                new students navigate campus resources more efficiently.
-            </p>
-            
-            <p>
-                In addition to my coursework, I am an active member of the university's coding club. 
-                Participating in club activities and attending workshops has allowed me to meet like-minded peers and 
-                expand my understanding of various programming concepts. 
-                I have also taken part in my first hackathon,
-                which was an incredible learning experience and a lot of fun.
-            </p>
-            
-            <p>
-                Outside of academics, I enjoy reading about the latest technological advancements 
-                and experimenting with small coding projects. 
-                These hobbies not only fuel my passion for computer science but also keep me 
-                motivated to continue learning and improving my skills.
-            </p>
-        </div>
+    </div>
     </div>
 
     <br/>
@@ -77,180 +133,32 @@
     <br/>
     <br/>
     <br/>
-    <br/>
-    <br/>
-    
-    <div class="college-intro">
-        <div class="college-article">
-            <p> 
-                National Taiwan Ocean University, located in Keelung, 
-                is renowned for its excellence in marine sciences and technology. 
-                Within NTOU, the Department of Computer Science offers a cutting-edge academic environment 
-                dedicated to fostering innovation and expertise in computer science and engineering.
-            </p>
-            
-            <p>
-                The department prides itself on its comprehensive curriculum that 
-                integrates theoretical knowledge with practical skills, 
-                preparing students to tackle real-world challenges in computing and information technology. 
-                Faculty members are distinguished researchers and industry professionals 
-                who mentor students in various specialized fields such as artificial intelligence, cybersecurity, 
-                data science, and software engineering.
-            </p>
-            
-            <p>
-                NTOU's Computer Science Department emphasizes hands-on learning through state-of-the-art 
-                laboratories and collaborative projects, ensuring graduates are well-equipped for careers 
-                in both academia and industry. The department's commitment to academic rigor and innovation 
-                makes it a hub for aspiring computer scientists seeking to make significant contributions to the field.
-            </p>
-               
+
+    <div class="hobby-intro" data-aos="fade-up">
+        <div class="hobby-title">
+            <h2>Hobby</h2>
         </div>
 
-        <div class="college-picture">
-            <img src="image/college.png" width="750px">
-        </div> 
-    </div>
+        <div class="hobby-detail">
+            <div class="hobby-article">
+                <ul>
+                    <li>Streamer : Hololive's vtuber</li>
+                    <li>Stream type : Gaming, Singing, Chatting</li>
+                    <li>Motivation : Drawn to their creativity & talent</li>
+                    <li>Effect : Releasing stress </li>
+                </ul>
+            </div>
 
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-
-
-    <div class="hobby-intro">
-        <div class="hobby-picture">
-            <img src="image/hobby.png" width="750px">
-        </div>
-        
-        <div class="hobby-article">
-            <p> 
-                One of my favorite hobbies is watching Hololive VTuber streams. 
-                Hololive is a well-known agency that features virtual YouTubers, or VTubers, 
-                who use anime-style avatars to entertain their audience through various live streams. 
-                These streams can include gaming, singing, chatting, and a variety of creative content, 
-                making each stream unique and engaging.
-            </p>
-            
-            <p>
-                The charm of Hololive lies in its diverse cast of VTubers, 
-                each with their own distinct personality, style, and backstory. 
-                Whether it's the energetic and mischievous antics of one VTuber or the calming and 
-                soothing streams of another, there's always something captivating to watch. 
-                I find myself drawn to their creativity and the way they interact with their fans, 
-                creating a welcoming and inclusive community.
-            </p>
-            
-            <p>
-                Watching Hololive VTuber streams is not just about the entertainment; 
-                it's about the connection between the VTubers and their viewers. 
-                The live chat interactions, spontaneous moments, and the sense of being part of 
-                a larger fan community enhance the viewing experience. It's a wonderful way to unwind and 
-                escape from the daily grind, immersing myself in a world of fun and creativity.
-            </p>
-                
-            <p>
-                In essence, watching Hololive VTuber streams is more than just a pastime for me; 
-                it's a source of joy and a way to connect with others who appreciate this unique and 
-                entertaining form of digital content.
-            </p>
+            <div class="hobby-picture">
+                <img src="image/hobby.png" width="650px">
+            </div>
         </div>
     </div>
 
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-
-    <div class="game-intro">
-        <div class="game-article">
-            <p> 
-                "Victory Goddess: Nikke" is a captivating game that stands out not only for its engaging gameplay 
-                but also for its exceptionally well-crafted storyline. 
-                Set in a richly detailed world where gods and mortals intertwine, 
-                the game weaves a narrative that is both compelling and immersive.
-            </p>
-            
-            <p>
-                The story revolves around the titular character, Nikke, a powerful and enigmatic deity. 
-                As players progress through the game, they uncover Nikke's mysterious past, her struggles, 
-                and the divine conflicts that shape her destiny. The plot is intricately layered, 
-                offering unexpected twists and deep emotional resonance that keeps players hooked from beginning to end.
-            </p>
-            
-            <p>
-                One of the most remarkable aspects of the storyline is its character development. 
-                Each character in the game, from the main protagonists to the supporting cast, 
-                is given a rich backstory and a unique personality. 
-                Their interactions and relationships are thoughtfully portrayed, adding depth and realism to the narrative. 
-                Players find themselves not only invested in the overarching plot but also in the personal journeys 
-                of these well-developed characters.
-            </p>
-
-            <p>
-                The game's writing excels in creating a vivid and immersive world. 
-                The lore is detailed and meticulously crafted, providing a solid foundation for the story to unfold. 
-                Dialogues are sharp and impactful, enhancing the overall narrative experience. Themes of power, sacrifice, 
-                and redemption are explored with nuance, making the story both thought-provoking and emotionally engaging.
-            </p>
-               
-        </div>
-
-        <div class="game-picture">
-            <img src="image/game.jpg" width="750px">
-        </div> 
-    </div>
-
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-
-    <div class="food-intro">
-        <div class="food-picture">
-            <img src="image/food.jpg" width="700px">
-        </div>
-        
-        <div class="food-article">
-            <p> 
-                One of my favorite culinary delights is sushi. This traditional Japanese dish has captured my heart 
-                and taste buds with its delicate balance of flavors and textures. 
-                Sushi, with its combination of vinegared rice, fresh seafood, and various other ingredients, 
-                offers a dining experience that is both unique and exquisite.
-            </p>
-            
-            <p>
-                What I love most about sushi is its versatility. From the simplicity of nigiri, 
-                where a slice of fresh fish is artfully placed atop a small bed of rice, 
-                to the more elaborate maki rolls filled with a variety of ingredients, 
-                each piece of sushi tells its own story. The freshness of the fish, the slight tang of the rice, 
-                and the subtle hints of wasabi and soy sauce create a harmony of flavors that is truly unparalleled.
-            </p>
-            
-            <p>
-                Sushi also offers a wonderful social experience. Sharing a beautifully presented platter of sushi 
-                with friends or family is a joy. It's a dish that encourages conversation and connection, 
-                as we savor each bite and discuss our favorite flavors and combinations.
-            </p>
-                
-            <p>
-                In essence, my love for sushi goes beyond just enjoying a delicious meal. 
-                It's about appreciating the artistry, the tradition, and the communal experience that sushi brings. 
-                Every time I indulge in sushi, it feels like a special occasion, a celebration of flavors and 
-                craftsmanship that never fails to delight.
-            </p>
-
-        </div>
-    </div>
-
+    <script>
+        AOS.init({
+            duration: 2000,
+        });
+    </script>
 </body>
 </html>
