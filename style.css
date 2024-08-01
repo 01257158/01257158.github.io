@@ -469,7 +469,7 @@ input[type="radio"]{
 }
 .vtuber input[type="radio"]:nth-of-type(5):checked ~ .vtuber{
     transform: translatex(-400%);
-    transition: 1s ease-in-out1
+    transition: 1s ease-in-out;
 }
 
 /*建立project頁面*/
