@@ -328,22 +328,148 @@ position:relative; right:100px;
 }
 
 .hobby-picture {
-display: flex;
-flex:1;
+    display: flex;
+    flex:1;
 }
 
 .hobby-article {
-display: flex;
-flex:1;
-font-family: Didot, serif; 
-opacity:0.8;
-position:relative; right:100px;
+    display: flex;
+    flex:1;
+    font-family: Didot, serif; 
+    opacity:0.8;
+    position:relative; right:100px;
 }
 
 .hobby-article ul{
     padding: 0px 0px 0px 140px;
     line-height:2.3;
     font-size:35px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/*vtuber輪播圖效果*/
+ul.vtuber{
+    position: relative;
+    list-style: none;
+    width:790px;
+    height:450px;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    overflow: hidden;
+}
+
+li.vtuber{
+    margin: 0;
+    padding: 0;
+    width:inherit;
+    height:inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.vtuber:nth-of-type(1){
+    background-image: url(image/nerissa.webp);
+}
+
+.vtuber:nth-of-type(2){
+    background-image: url(image/bijou.webp);
+    left:100%;
+}
+
+.vtuber:nth-of-type(3){
+    background-image: url(image/mococo.webp);
+    left:200%;
+    
+}
+
+.vtuber:nth-of-type(4){
+    background-image: url(image/fuwawa.webp);
+    left:300%;
+}
+
+.vtuber:nth-of-type(5){
+    background-image: url(image/shiori.webp);
+    left:400%;
+}
+
+input[type="radio"]{
+    position: relative;
+    z-index: 100;
+    display: none;
+}
+
+.control-visible{
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    text-align: center;
+}
+
+.control-visible label{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid #fff;
+}
+
+.vtuber input[type="radio"]:nth-of-type(1):checked ~
+.control-visible label:nth-of-type(1){
+    background-color: gray;
+}
+
+.vtuber input[type="radio"]:nth-of-type(2):checked ~
+.control-visible label:nth-of-type(2){
+    background-color: gray;
+}
+
+.vtuber input[type="radio"]:nth-of-type(3):checked ~
+.control-visible label:nth-of-type(3){
+    background-color: gray;
+}
+
+.vtuber input[type="radio"]:nth-of-type(4):checked ~
+.control-visible label:nth-of-type(4){
+    background-color: gray;
+}
+
+.vtuber input[type="radio"]:nth-of-type(5):checked ~
+.control-visible label:nth-of-type(5){
+    background-color: gray;
+}
+
+.vtuber input[type="radio"]:nth-of-type(1):checked ~ .vtuber{
+    transform: translatex(0%);
+    transition: 1s ease-in-out;
+}
+
+.vtuber input[type="radio"]:nth-of-type(2):checked ~ .vtuber{
+    transform: translatex(-100%);
+    transition: 1s ease-in-out;
+}
+
+.vtuber input[type="radio"]:nth-of-type(3):checked ~ .vtuber{
+    transform: translatex(-200%);
+    transition: 1s ease-in-out;
+}
+
+.vtuber input[type="radio"]:nth-of-type(4):checked ~ .vtuber{
+    transform: translatex(-300%);
+    transition: 1s ease-in-out;
+}
+.vtuber input[type="radio"]:nth-of-type(5):checked ~ .vtuber{
+    transform: translatex(-400%);
+    transition: 1s ease-in-out1
 }
 
 /*建立project頁面*/
