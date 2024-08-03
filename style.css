@@ -191,29 +191,59 @@ body {
 }
 
 .self-picture {
-display: flex;
-flex:1;
+    display: flex;
+    flex: 1;
+    width: 500px;
+    height: 400px;
+    position: relative;
+    perspective: 900px;
+}
+
+.front, .back{
+    width: 93%;
+    height: 103%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: 1s ease-in-out;
+}
+
+.front{
+    background-image: url(image/自介圖2.jpg) ;
+    transform: rotateY(0deg);
+}
+
+.self-picture:hover .front{
+    transform: rotateY(180deg);
+}
+
+.back{
+    background-image: url(image/college.png);
+    transform: rotateY(-180deg);
+}
+
+.self-picture:hover .back{
+    transform: rotateY(0deg);
 }
 
 .self-article {
-display: flex;
-flex:1;
-font-family: Didot, serif; 
-opacity:0.8;
-position:relative; right:100px;
+    display: flex;
+    flex: 1;
+    font-family: Didot, serif; 
+    opacity: 0.8;
+    position: relative; right: 100px;
 }
 
 .self-article ul{
     padding: 0px 0px 0px 150px;
-    line-height:2.3;
-    font-size:35px;
+    line-height: 2.3;
+    font-size: 35px;
 }
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 
-.college-intro {
+.education-intro {
     display: flex;
     flex-direction: column;
     padding: 20px 180px 50px 200px;
@@ -221,14 +251,14 @@ position:relative; right:100px;
     text-shadow: black 0.1em 0.1em 0.2em;
 }
 
-.college-title{
+.education-title{
     display: flex;
     flex:1;
     justify-content: center;
     font-size:50px;
 }
 
-.college-detail{
+.education-detail{
     display: flex;
     flex:1;
     flex-direction: row;
@@ -236,12 +266,12 @@ position:relative; right:100px;
     padding: 0px 0px 100px 0px;
 }
 
-.college-picture {
+.education-picture {
     display: flex;
     flex:2;
 }
 
-.college-article {
+.education-article {
     display: flex;
     flex:3;
     font-family: Didot, serif; 
@@ -249,7 +279,7 @@ position:relative; right:100px;
     position:relative; right:100px;
 }
 
-.college-article ul{
+.education-article ul{
     padding: 0px 0px 0px 130px;
     line-height:2.3;
     font-size:35px;
